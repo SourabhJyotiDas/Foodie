@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+.primary-font {
+  font-family: "Allura", cursive;
+}
+.danger-font {
+  font-family: "Open Sans", sans-serif;
+}
+.secondary-font {
+  font-family: "Josefin Sans", sans-serif;
+}
+.p-font {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.link {
+  background-image: linear-gradient(red, white);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: right;
+  transition: background-size 500ms;
+}
+.link:hover {
+  background-position-x: left;
+  /* color: White; */
+  background-size: 100% 100%;
+}
+
+
+
+
+.cursorAnimation{
+  height: 30px;
+  width: 30px;
+  border: 2px solid red;
+  display: inline-block;
+  color: crimson;
+  position: absolute;
+  border-radius: 50%;
+  animation: fade 0.3s linear;
+}
